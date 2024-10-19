@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="400.0" fitWidth="232.0" layoutY="-1.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@log.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="471.0" style="-fx-background-color: #ECECE7;" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="211.0" layoutY="337.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Add" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="342.0" layoutY="337.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Modify" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button layoutX="472.0" layoutY="337.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Delete" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Text layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Catelog" textAlignment="CENTER" wrappingWidth="786.7832126617432">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <Text fill="#050000" layoutX="1.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The catelog is updated" textAlignment="CENTER" wrappingWidth="783.5831241607666" />
+                <TableView layoutY="66.0" prefHeight="268.0" prefWidth="794.0" style="-fx-background-color: #adadac;">
+                    <columns>
+                        <TableColumn prefWidth="49.60003590583801" text="ID" />
+                        <TableColumn prefWidth="203.1999855041504" text="Name " />
+                        <TableColumn prefWidth="164.7999725341797" text="Purchase Price" />
+                        <TableColumn prefWidth="187.199951171875" text="Sell Price" />
+                        <TableColumn prefWidth="123.9998779296875" text="Discount" />
+                        <TableColumn prefWidth="64.800048828125" text="Size" />
+                    </columns>
+                </TableView>
+                <MenuButton layoutX="14.0" layoutY="28.0" mnemonicParsing="false" text="All" textAlignment="CENTER">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                </MenuButton>
+                <Button layoutX="659.0" layoutY="27.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="110.0" text="Add Product " textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Label layoutX="266.0" layoutY="33.0" prefHeight="18.0" prefWidth="121.0" text="Capital:" />
+                <TextField layoutX="345.0" layoutY="29.0" prefHeight="26.0" prefWidth="127.0" text="Amount ***" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
