@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.womenshopfx.ProductController">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="400.0" fitWidth="232.0" layoutY="-1.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@log.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="471.0" style="-fx-background-color: #ECECE7;" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Catalog" textAlignment="CENTER" wrappingWidth="786.7832126617432">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+
+                <Label fx:id="capitalLabel" layoutX="565.0" layoutY="27.0" prefHeight="27.0" prefWidth="205.0" text="Capital: $">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="capitalAmountLabel" layoutX="646.0" layoutY="27.0" prefHeight="18.0" prefWidth="100.0" text="0.00">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+
+                <MenuButton fx:id="productTypeMenu" layoutX="14.0" layoutY="28.0" mnemonicParsing="false" text="Select Product Type">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Clothing" />
+                        <MenuItem mnemonicParsing="false" text="Accessories" />
+                        <MenuItem mnemonicParsing="false" text="Footwear" />
+                    </items>
+                </MenuButton>
+
+                <Button fx:id="sellButton" layoutX="424.0" layoutY="340.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Sell Product" />
+
+                <TableView fx:id="productTable" layoutY="66.0" prefHeight="268.0" prefWidth="794.0" style="-fx-background-color: #adadac;">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="49.6" text="ID" />
+                        <TableColumn fx:id="nameColumn" prefWidth="203.2" text="Name" />
+                        <TableColumn fx:id="purchasePriceColumn" prefWidth="164.8" text="Purchase Price" />
+                        <TableColumn fx:id="sellPriceColumn" prefWidth="187.2" text="Sell Price" />
+                        <TableColumn fx:id="discountColumn" prefWidth="124.0" text="Discount" />
+                        <TableColumn fx:id="sizeColumn" prefWidth="64.8" text="Size" />
+                    </columns>
+                </TableView>
+
+                <Button fx:id="addButton" layoutX="45.0" layoutY="345.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="106.0" text="Add" />
+                <Button fx:id="modifyButton" layoutX="242.0" layoutY="342.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="107.0" text="Modify" />
+                <Button fx:id="deleteButton" layoutX="612.0" layoutY="342.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Delete" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
